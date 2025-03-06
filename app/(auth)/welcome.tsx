@@ -13,11 +13,11 @@ const Welcome = () => {
 
   // Use callback functions to handle navigation
   const navigateToLogin = () => {
-    router.push('/login');
+    router.push("/login");
   };
 
   const navigateToRegister = () => {
-    router.push('/register');
+    router.push("/register");
   };
 
   return (
@@ -25,7 +25,10 @@ const Welcome = () => {
       <View style={styles.container}>
         {/* Login button & image*/}
         <View>
-          <TouchableOpacity onPress={navigateToLogin} style={styles.loginButton}>
+          <TouchableOpacity
+            onPress={navigateToLogin}
+            style={styles.loginButton}
+          >
             <Typo fontWeight={"500"}>Sign in</Typo>
           </TouchableOpacity>
           <Animated.Image
